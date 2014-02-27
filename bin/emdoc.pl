@@ -23,16 +23,6 @@ use warnings;
 ##
 ## When we switch text <-> code block, we insert an
 ## empty line. This seems to fix the formatting hijinks.
-##
-## UNFINISHED
-## - lines that contain only comments and whitespace should
-##   perhaps be special treated (they turn into blank lines now)
-## - some embedded strings could perhaps be misclassified, skipping that
-##   (if they continue to a new line and start with %)
-## - get rid of other directives like "%% -*- Erlang -*-" etc
-##   [perhaps mark lines explicitly to skip in output?]
-## - add more intelligence and linkability?
-##   * analyze code to detect which function is being defined
 
 ## 1 if emitting codeblock, 0 otherwise
 ## used to emit blank separation lines
