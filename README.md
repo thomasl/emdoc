@@ -5,7 +5,25 @@ Usage:
 
     ./bin/emdoc < foo.erl > foo.erl.md
     
-Comment lines are considered markdown, while other lines are considered code blocks.
+Erlang comment lines are considered markdown, while other lines are
+considered code blocks.
+
+emdoc-lit: literate erlang to markdown
+==========
+
+Usage:
+
+    ./bin/emdoc-lit.pl < foo.erl.md > foo.erl
+
+Write your program as markdown, enclose the erlang code
+in erlang blocks. The script extracts the erlang into foo.erl.
+
+    ```erlang
+    ...
+    ```
+
+(Inspired by Gordon Guthrie, 
+[https://github.com/hypernumbers/literate-erlang](https://github.com/hypernumbers/literate-erlang).)
 
 Status
 =======
