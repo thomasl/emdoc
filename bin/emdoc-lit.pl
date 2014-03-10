@@ -23,14 +23,6 @@ use warnings;
 ##   then put all lines in the erlang block
 ##   until a terminating line or EOF is found
 ## - loop until file has been processed
-##
-## UNFINISHED
-## - only handles ```erlang ... ``` blocks, while
-##   markdown also has other syntax for blocks
-##   - we should PERHAPS also handle alternate syntaxes
-## - github-flavored markdown implied by the syntax choice
-## - generated code still contains original indentations,
-##   so it looks a bit weird, but compiles okay
 
 my $line;
 
@@ -44,7 +36,7 @@ while ($line = <>) {
 	    }
 	    print STDOUT $line;
 	}
-	## should break to here
+	## breaks to here
     }
 }
 
